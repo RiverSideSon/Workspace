@@ -25,13 +25,13 @@ public class Principal {
 		func3.setsalario(10000);
 		
 		func1.reajustarSalario(5);
-		func2.reajustarSalario(5);
+		func2.reajustarSalario(20);
 		func3.reajustarSalario(5);
 		
 		System.out.println("Nome    "+"Salario"+" Imposto"+"\n"+
                            "------- ------- -------"+"\n"+
 		                   func1.getnome()+"  "+func1.getsalario()+"     "+func1.calcularImposto()+"\n"+
-				           func2.getnome()+"     "+func2.getsalario()+"  "+func2.calcularImposto()+"\n"+
+				           func2.getnome()+"     "+func2.getsalario()+"   "+func2.calcularImposto()+"\n"+
 				           func3.getnome()+"   "+func3.getsalario()+"  "+func3.calcularImposto());
 	}
 }

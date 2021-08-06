@@ -23,13 +23,9 @@ public class Funcionario {
 			else if (salario <= 4500) {
 				return salario * 0.25;
 			}
-			else {
-				return 2250;
-			}
+			else return 2250;
 		}
-        else {
-            return 0;
-        }
+        else return 0;
 	}
 	
 	public int getfuncional() {
