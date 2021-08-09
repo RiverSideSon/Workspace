@@ -4,6 +4,17 @@ public class Funcionario {
 	private String email;
 	private double salario;
 	
+	public String padRight(String inputString, int length, String chrComplete) {
+		return String.format("%1$-" + length + "s", inputString).replace(" ", chrComplete);
+	}
+	
+	public Funcionario (int funcional, String nome, String email, double salario) {
+		this.funcional = funcional;
+		this.nome = nome;
+		this.email = email;
+		this.salario = salario;
+	}
+	
 	public String exibirInfo() {
 		return 	"Funcional : "+funcional+"\n"+
 		        "Nome      : "+nome+"\n"+
