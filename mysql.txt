@@ -1,0 +1,169 @@
+-- Comando para criar o database
+create database itau;
+
+-- Usar o database
+use itau;
+
+-- Comando para criar tabela
+create table itau.clientes
+(
+  codigo_cliente integer not null primary key,
+  nome_cliente varchar(50) not null,
+  idade_cliente integer not null,
+  email_cliente varchar(80) not null
+);
+
+-- Comando para descrever a estrutura da tabela
+describe itau.clientes;
+
+-- Comando utilizado para inserir registros na tabela
+insert into itau.clientes
+(codigo_cliente,nome_cliente,idade_cliente,email_cliente)
+values
+(1,'Amanda Rocha',20,'amanda@itau.com.br'),
+(2,'Eduardo Ribeiro',22,'eduardo@itau.com.br'),
+(3,'Carol Nunes',19,'carol@itau.com.br'),
+(4,'William Soares',25,'william@itau.com.br');
+
+-- Comando para ver as informações da tabela
+select * from itau.clientes;
+select nome_cliente, idade_cliente from itau.clientes;
+
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (5,"Colton T. Sanchez",37,"in@mollisduiin.edu"),(6,"Fleur Mcconnell",97,"augue.Sed@Maurisvelturpis.ca"),(7,"Candace Rocha",65,"pede.nonummy@nonenim.ca"),(8,"Abel N. Fuller",88,"tempus.lorem.fringilla@nullaDonecnon.org"),(9,"Germaine Hoffman",95,"odio.vel.est@euodio.org"),(10,"Charde Henderson",99,"non@accumsan.ca"),(11,"Mercedes P. Decker",21,"risus.In.mi@rutrum.org"),(12,"Gray C. Colon",99,"pulvinar.arcu@rutrum.ca"),(13,"Stephanie Y. Justice",40,"vulputate.risus.a@orci.org"),(14,"Jackson Whitaker",91,"eget@leoMorbineque.edu");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (15,"Colt Y. Jarvis",92,"tortor@Curae.com"),(16,"Alika X. Cruz",93,"eget.ipsum.Suspendisse@porttitorscelerisque.co.uk"),(17,"Ingrid E. Wallace",44,"Proin.nisl.sem@loremacrisus.org"),(18,"Darius Potter",96,"In.ornare@id.com"),(19,"Demetrius Briggs",53,"vitae@semperegestasurna.edu"),(20,"Carson Jacobson",100,"Aliquam.nisl@egestasSed.co.uk"),(21,"Silas G. Walters",85,"Aliquam@sit.net"),(22,"Lavinia Prince",70,"congue.turpis.In@vitae.org"),(23,"Herrod Boyer",63,"magna.Sed@maurisipsum.co.uk"),(24,"Dillon A. Lambert",85,"eu@quislectus.edu");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (25,"Rudyard Goodman",75,"Nunc@etcommodo.co.uk"),(26,"Micah Donovan",100,"Integer.vitae@Donecluctus.ca"),(27,"Colby J. Sampson",74,"Nam@ametlorem.org"),(28,"Halee Castillo",36,"placerat@Aliquamadipiscing.ca"),(29,"Felix X. Maddox",32,"vitae@eu.com"),(30,"Gay Terry",69,"Nulla@commodo.co.uk"),(31,"Cassady Francis",66,"Suspendisse.sagittis.Nullam@Loremipsumdolor.net"),(32,"Emery V. Terry",93,"sem.elit@nibhvulputatemauris.co.uk"),(33,"Stacy B. Lambert",31,"netus.et.malesuada@tellusSuspendissesed.com"),(34,"Urielle Warren",46,"dui@natoque.co.uk");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (35,"Axel N. Kirkland",43,"cursus.in@mauris.edu"),(36,"Nita Avila",45,"tempor@anteipsumprimis.edu"),(37,"Octavia Herring",63,"et@pellentesqueSeddictum.ca"),(38,"Linda C. Hester",64,"luctus.Curabitur.egestas@pede.ca"),(39,"Jael I. Baker",94,"tempor@diamdictumsapien.net"),(40,"Garrett Hurley",76,"enim.Curabitur@hendreritDonecporttitor.ca"),(41,"David N. Wheeler",73,"aliquam.arcu@gravida.net"),(42,"Eliana Knowles",45,"ante.Vivamus@eleifendCras.org"),(43,"Kamal Ware",80,"ante.Maecenas.mi@dictumultriciesligula.org"),(44,"Eliana Santos",71,"sociosqu.ad.litora@ornaresagittisfelis.co.uk");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (45,"Sonya D. Quinn",63,"semper.egestas.urna@egestas.org"),(46,"Blaine Humphrey",58,"lobortis.nisi@tellusNunclectus.co.uk"),(47,"Shad H. Walter",43,"nostra@Class.edu"),(48,"Genevieve Dickerson",96,"Etiam.bibendum.fermentum@Quisquetincidunt.org"),(49,"Minerva P. Wong",100,"parturient.montes.nascetur@Duis.org"),(50,"Gavin K. Olsen",27,"mauris@imperdietornare.com"),(51,"Colorado P. Fernandez",84,"vel@eueuismod.com"),(52,"Melvin Simon",66,"eu.accumsan.sed@esttemporbibendum.com"),(53,"Hasad L. Middleton",92,"erat@duiFuscealiquam.ca"),(54,"Brendan G. Quinn",83,"tincidunt.adipiscing@Etiam.com");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (55,"Daphne Vargas",79,"metus.Vivamus.euismod@tincidunt.ca"),(56,"Vincent S. Paul",56,"turpis@Nulla.co.uk"),(57,"Dustin K. Barton",81,"est@molestieorcitincidunt.com"),(58,"Tucker Webb",68,"tellus@sodalesnisimagna.org"),(59,"Allistair Y. Ware",20,"luctus@Mauris.com"),(60,"Nero R. Franklin",60,"neque.Nullam@sapien.org"),(61,"Walter Brady",61,"adipiscing.elit@Donectempuslorem.net"),(62,"Oleg F. Leach",34,"eros.nec@lectusNullamsuscipit.edu"),(63,"Nola B. Frazier",82,"libero.nec@ridiculusmus.co.uk"),(64,"Ocean Davis",18,"enim.consequat.purus@mollisnoncursus.com");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (65,"Madonna R. Hancock",89,"pede.nec.ante@odiosagittissemper.co.uk"),(66,"Ezra Cantrell",41,"Donec.fringilla@blandit.org"),(67,"Justine U. Hurley",92,"placerat.orci.lacus@rutrummagna.ca"),(68,"Jameson Rutledge",92,"porttitor.vulputate@sitamet.net"),(69,"Camden H. Jensen",98,"Donec.non@egestas.net"),(70,"Mara Wolfe",59,"Fusce@ametmassa.org"),(71,"Carter E. Carney",53,"nunc.est.mollis@molestietortornibh.co.uk"),(72,"Francesca Mercer",100,"Morbi.quis.urna@Crasvulputate.edu"),(73,"Chanda V. Carver",36,"Donec.sollicitudin@rutrum.edu"),(74,"Olga Cross",39,"facilisis.vitae@eumetusIn.net");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (75,"Minerva Cochran",47,"accumsan@Phasellusnulla.com"),(76,"Ina U. Mendez",91,"massa.Mauris@velpedeblandit.net"),(77,"Kasimir Richard",38,"erat.vitae@nonluctussit.edu"),(78,"Abdul Carpenter",72,"enim@Vivamusnon.ca"),(79,"Kessie Neal",62,"non@odioauctorvitae.co.uk"),(80,"Armando Briggs",76,"nunc@egetvenenatis.co.uk"),(81,"Ahmed Barnett",77,"metus.In@Vivamusnibhdolor.co.uk"),(82,"Emi Rivera",87,"id@lacuspede.com"),(83,"Xavier Duffy",43,"erat.Vivamus@enim.ca"),(84,"Athena Albert",38,"netus.et@fringillaornare.net");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (85,"Wade Walsh",69,"laoreet.lectus.quis@turpisAliquamadipiscing.ca"),(86,"Mona A. Trujillo",41,"vulputate@parturient.ca"),(87,"Eve Snider",33,"Cum.sociis.natoque@ac.com"),(88,"Nelle Alexander",99,"amet.consectetuer@in.com"),(89,"Grace C. Sargent",90,"tristique.ac@velarcueu.org"),(90,"Cadman Morse",64,"Morbi@imperdiet.ca"),(91,"Suki X. Rodriguez",22,"at@quisurnaNunc.co.uk"),(92,"Judah F. Duncan",21,"fames@euodio.co.uk"),(93,"Zane Freeman",63,"nisi.Aenean@Cras.edu"),(94,"Kirk U. Lara",22,"amet.consectetuer.adipiscing@justoProinnon.ca");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (95,"Dahlia Q. Horne",44,"purus@vehicula.org"),(96,"Zoe R. Porter",65,"eget.massa.Suspendisse@quisdiamPellentesque.co.uk"),(97,"Francis Hawkins",18,"nulla.Cras.eu@dictum.org"),(98,"Rowan Hull",88,"placerat@NullamenimSed.net"),(99,"Veda Norton",32,"eget@viverra.org"),(100,"Iliana B. Espinoza",34,"ante.blandit@Morbi.edu"),(101,"Quentin Brock",22,"in@ametornare.org"),(102,"Aretha Levy",47,"enim@urnanecluctus.org"),(103,"Gillian K. Hutchinson",57,"semper@Integermollis.net"),(104,"Noel Delacruz",97,"amet@dui.edu");
+
+-- Comando utilizado para fazer filtros na tabela
+select * from itau.clientes where idade_cliente between 18 and 30;
+select * from itau.clientes where idade_cliente >=18 and idade_cliente <= 30 order by idade_cliente;
+select * from itau.clientes where idade_cliente >= 50;
+
+select * from itau.clientes where nome_cliente = 'Amanda Rocha';
+select * from itau.clientes where nome_cliente like 'Amanda%';
+select * from itau.clientes where nome_cliente like '%rocha';
+select * from itau.clientes where nome_cliente like 'C%' order by nome_cliente;
+
+-- Comando para fazer "backup" do dado de uma tabela
+create table itau.bkp_clientes select * from itau.clientes;
+
+select count(*) Total_Tab_clientes from itau.clientes;
+select count(*) Total_Tab_Bkp_clientes from itau.bkp_clientes;
+
+-- Comando excluir dados de uma tabela
+delete from itau.clientes;
+delete from itau.clientes where idade_cliente >= 40;
+
+-- Comando para copiar dados de uma tabela para outra
+insert into itau.clientes
+(codigo_cliente,nome_cliente,idade_cliente,email_cliente)
+select codigo_cliente,nome_cliente,idade_cliente,email_cliente
+from itau.bkp_clientes;
+
+-- Comando para selecionar o menor/maior valor de um campo
+select min(idade_cliente) from itau.clientes;
+select max(idade_cliente) from itau.clientes;
+
+-- Comando para trabalar com sub-selects
+select * from itau.clientes where idade_cliente = (select max(idade_cliente) from itau.clientes);
+
+-- Comando para selecionar registros intercalados
+select * from itau.clientes where idade_cliente in (20,30,40) order by idade_cliente, nome_cliente desc;
+
+-- Comando pra incluir/excluir/modificar uma coluna na tabela do banco de dados
+alter table itau.clientes add endereco varchar(50) not null;
+alter table itau.clientes drop column endereco;
+alter table itau.clientes rename column endereco to endereco_cliente;
+alter table itau.clientes change endereco_cliente endereco_cliente varchar(80) not null;
+alter table itau.clientes change nome_cliente nome_cliente varchar(10) not null;
+
+-- Comando que altera dados nas colunas das tabelas
+update itau.clientes set endereco_cliente="Rua Catão" where codigo_cliente=2;
+update itau.clientes set endereco_cliente="Atualizar o endereço" where codigo_cliente<>2;
+
+-- Criar tabela de valores de vendas
+create table itau.vendas
+(
+codigo_venda integer not null auto_increment primary key,
+nome_produto varchar(30) not null,
+quantidade_produtos integer not null,
+valor_unitario decimal (8,2) not null,
+nome_vendedor varchar(50) not null
+);
+insert into itau.vendas
+(nome_produto, quantidade_produtos, valor_unitario, nome_vendedor)
+values
+('Mouse', 30, 35.99, 'Marcos'),
+('Impressora', 10, 280.50, 'Cristina'),
+('Scanner', 15, 150, 'Marcos'),
+('Monitor', 50, 480.50, 'Cristina');
+
+-- Comando para calcular/sumarizar valores e agrupamentos
+select nome_produto,quantidade_produtos,valor_unitario,nome_vendedor,quantidade_produtos*valor_unitario total
+from itau.vendas;
+select sum(quantidade_produtos*valor_unitario) total from itau.vendas;
+select sum(quantidade_produtos*valor_unitario), nome_vendedor total from itau.vendas group by nome_vendedor;
+
+select idade_cliente, count(idade_cliente) total_pessos from itau.clientes
+group by idade_cliente order by idade_cliente;
+
+--
+select * from itau.clientes where codigo_cliente=2;
+describe itau.clientes;
+select * from itau.vendas;
+describe itau.vendas;
+
+use itau;
+
+CREATE TABLE `produtos` (
+	`codigo_produto` INT NOT NULL AUTO_INCREMENT,
+	`nome_produto` varchar(30) NOT NULL,
+	`valor_produto` DECIMAL(8,2) NOT NULL,
+	`codigo_marca` INT NOT NULL,
+	PRIMARY KEY (`codigo_produto`)
+);
+
+CREATE TABLE `marcas` (
+	`codigo_marca` INT NOT NULL AUTO_INCREMENT,
+	`nome_marca` varchar(50) NOT NULL,
+	PRIMARY KEY (`codigo_marca`)
+);
+
+ALTER TABLE `produtos` ADD CONSTRAINT `produtos_fk0` FOREIGN KEY (`codigo_marca`) REFERENCES `marcas`(`codigo_marca`);
+
+insert into itau.produtos (nome_produto,valor_produto,codigo_marca) values ('Geladeira',2200,1);
+
+insert into itau.produtos (nome_produto,valor_produto,codigo_marca) values
+('Fogão',1800,1),
+('Batedeira',280,2),
+('Liquidificador',89,2),
+('TV',2000,3);
+
+select * from itau.produtos;
+
+insert into itau.marcas (nome_marca) values ("Brastemp"),("Eletrolux"),("Sony"),("LG");
+
+select * from itau.marcas;
+
+select p.codigo_produto, p.nome_produto, p.valor_produto, m.nome_marca
+from itau.produtos as p inner join itau.marcas as m on p.codigo_marca = m.codigo_marca;
+
+-- Procedures
+create table itau.bkp_marcas select * from itau.marcas;
+create table itau.bkp_produtos select * from itau.produtos;
+
+use itau;
+
+insert into itau.marcas (nome_marca)
+values ('Samsung'),
+('HP');
+
+select * from itau.marcas;
+
+select * from itau.bkp_marcas;
